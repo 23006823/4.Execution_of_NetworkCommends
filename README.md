@@ -25,8 +25,9 @@ This commands includes
 <BR>
 • Other IP Commands e.g. show ip route etc.
 <BR>
-##PROGRAM:
+## PROGRAM:
 CLIENT:
+
 ```
 **import socket 
 from pythonping import ping 
@@ -40,26 +41,24 @@ while True:
         c.send(str(ping(hostname, verbose=False)).encode()) 
     except KeyError: 
         c.send("Not Found".encode())
-        `````
-  SERVER:
-  ````
-  import socket 
+``` 
+SERVER:
+```
+import socket 
 s=socket.socket() 
 s.connect(('localhost',8000)) 
 while True: 
     ip=input("Enter the website you want to ping ") 
     s.send(ip.encode()) 
     print(s.recv(1024).decode())
-````
-TRANCEROUTE COMMAND:
+```
+## TRANCEROUTE COMMAND:
 ```
 from scapy.all import* 
 target = ["www.google.com"] 
 result, unans = traceroute(target,maxttl=32) 
 print(result,unans)
 ```
-
-
 ## Output
 PING COMMAND:
 CLIENT:
