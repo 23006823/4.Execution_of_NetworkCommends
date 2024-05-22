@@ -1,4 +1,6 @@
 # 4.Execution_of_NetworkCommands
+## NAME: M GAYATHIRI ROSHINI
+## REG NO: 212223110012
 ## AIM :Use of Network commands in Real Time environment
 ## Software : Command Prompt And Network Protocol Analyzer
 ## Procedure: To do this EXPERIMENT- follows these steps:
